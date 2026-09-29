@@ -165,7 +165,7 @@ export const Navbar: React.FC = () => {
               <ShoppingBag className="h-4 w-4 text-slate-600 dark:text-slate-300" />
               <span>Cart</span>
               {cartCount > 0 && (
-                <span className="flex h-5 min-w-[20px] items-center justify-center rounded-full bg-primary-600 px-1 text-[10px] font-extrabold text-white shadow-sm">
+                <span className="flex h-5 min-w-5 items-center justify-center rounded-full bg-primary-600 px-1 text-[10px] font-extrabold text-white shadow-sm">
                   {cartCount}
                 </span>
               )}
@@ -178,10 +178,10 @@ export const Navbar: React.FC = () => {
                   onClick={() => setIsProfileMenuOpen(!isProfileMenuOpen)}
                   className="flex items-center space-x-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 px-3 py-1.5 shadow-sm hover:bg-slate-50 dark:hover:bg-slate-750 transition-all"
                 >
-                  <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-gradient-to-tr from-primary-600 to-indigo-500 text-white font-bold text-xs">
+                  <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-linear-to-tr from-primary-600 to-indigo-500 text-white font-bold text-xs">
                     {user.name.charAt(0)}
                   </div>
-                  <span className="text-xs font-extrabold text-slate-800 dark:text-white max-w-[100px] truncate">
+                  <span className="text-xs font-extrabold text-slate-800 dark:text-white max-w-25 truncate">
                     {user.name}
                   </span>
                   <ChevronDown className={`h-3.5 w-3.5 text-slate-400 transition-transform duration-200 ${isProfileMenuOpen ? 'rotate-180' : ''}`} />
@@ -273,7 +273,7 @@ export const Navbar: React.FC = () => {
             <button onClick={() => setIsCartOpen(true)} className="relative p-2 text-slate-600 dark:text-slate-300">
               <ShoppingBag className="h-6 w-6" />
               {cartCount > 0 && (
-                <span className="absolute top-1 right-1 flex h-4 min-w-[16px] items-center justify-center rounded-full bg-primary-600 text-[10px] font-bold text-white">
+                <span className="absolute top-1 right-1 flex h-4 min-w-4 items-center justify-center rounded-full bg-primary-600 text-[10px] font-bold text-white">
                   {cartCount}
                 </span>
               )}
@@ -294,7 +294,7 @@ export const Navbar: React.FC = () => {
       {/* Mobile Drawer Menu */}
       <div
         className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out bg-white dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800 ${
-          isOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
+          isOpen ? 'max-h-125 opacity-100' : 'max-h-0 opacity-0'
         }`}
         id="mobile-menu"
       >

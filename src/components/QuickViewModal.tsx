@@ -116,7 +116,7 @@ export const QuickViewModal: React.FC<QuickViewModalProps> = ({ product, onClose
                 </p>
 
                 {/* AI Summary Highlight Box */}
-                <div className="mt-4 rounded-xl bg-gradient-to-r from-primary-50/60 to-indigo-50/60 dark:from-slate-800/60 dark:to-slate-800/40 p-3.5 border border-primary-100/60 dark:border-slate-700/60">
+                <div className="mt-4 rounded-xl bg-linear-to-r from-primary-50/60 to-indigo-50/60 dark:from-slate-800/60 dark:to-slate-800/40 p-3.5 border border-primary-100/60 dark:border-slate-700/60">
                   <div className="flex items-center space-x-1.5 text-xs font-bold text-primary-700 dark:text-primary-300 mb-1">
                     <Sparkles className="h-3.5 w-3.5 text-primary-500 animate-pulse" />
                     <span>Aurelia Assist Highlight</span>

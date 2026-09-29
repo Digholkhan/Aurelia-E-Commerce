@@ -11,7 +11,7 @@ export const Hero: React.FC = () => {
   };
 
   return (
-    <section className="relative overflow-hidden min-h-[68vh] flex flex-col justify-center bg-gradient-to-b from-slate-50 via-white to-slate-50/50 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 py-12 sm:py-16 lg:py-20 transition-colors duration-300">
+    <section className="relative overflow-hidden min-h-[68vh] flex flex-col justify-center bg-linear-to-b from-slate-50 via-white to-slate-50/50 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 py-12 sm:py-16 lg:py-20 transition-colors duration-300">
       {/* Ambient glowing background blobs */}
       <motion.div
         animate={{
@@ -65,7 +65,7 @@ export const Hero: React.FC = () => {
               className="text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white sm:text-5xl md:text-6xl lg:leading-[1.1]"
             >
               Things that make <br />
-              <span className="bg-gradient-to-r from-orange-500 via-rose-500 to-amber-500 bg-clip-text text-transparent animate-gradient">
+              <span className="bg-linear-to-r from-orange-500 via-rose-500 to-amber-500 bg-clip-text text-transparent animate-gradient">
                 life feel lovely.
               </span>
             </motion.h1>
@@ -114,7 +114,7 @@ export const Hero: React.FC = () => {
           >
             <div className="relative w-full max-w-md md:max-w-lg aspect-square">
               {/* Outer decorative glow */}
-              <div className="absolute -inset-2 rounded-3xl bg-gradient-to-tr from-primary-500 via-indigo-500 to-purple-500 opacity-25 blur-2xl animate-pulse-glow"></div>
+              <div className="absolute -inset-2 rounded-3xl bg-linear-to-tr from-primary-500 via-indigo-500 to-purple-500 opacity-25 blur-2xl animate-pulse-glow"></div>
               
               <motion.div
                 animate={{ y: [-6, 6, -6] }}
